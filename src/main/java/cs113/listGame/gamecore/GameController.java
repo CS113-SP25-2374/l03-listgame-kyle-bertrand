@@ -123,10 +123,10 @@ public class GameController {
         EnemyObject enemyD = new EnemyArray(enemyImageD);
         gameEnemyList.add(enemyD);
 
+        gameObjectList.addAll(gameEnemyList);
+
         GoalObject goal = new GoalObject(goalImage);
         gameObjectList.add(goal);
-
-        gameObjectList.addAll(gameEnemyList);
 
         createResources(10);
         gameLoop.start();
